@@ -1,0 +1,152 @@
+package com.mytrain.fragment;
+
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.LinearLayout;
+
+import com.mytrain.R;
+import com.mytrain.activity.AboutActivity;
+import com.mytrain.activity.ChangeInformationActivity;
+import com.mytrain.activity.ChangePwdActivity;
+import com.mytrain.activity.MainActivity;
+import com.mytrain.activity.MoveToPage2;
+import com.mytrain.activity.MyContactActivity;
+import com.mytrain.activity.MyInformationActivity;
+
+public class Fragment3 extends Fragment implements OnClickListener {
+	private String items[] = new String[] { "111", "222", "333" };
+	private Button bt_changepwd;
+	private Button bt_information;
+	private Button bt_changeInfo;
+	private Button bt_mycontactor;
+	private Button bt_logout;
+	private Button bt_about;
+
+	private View view;
+
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
+		view = inflater.inflate(R.layout.fragment3, container, false);
+		initFragment3();
+		bt_changepwd.setOnClickListener(this);
+		bt_information.setOnClickListener(this);
+		bt_changeInfo.setOnClickListener(this);
+		bt_mycontactor.setOnClickListener(this);
+		bt_logout.setOnClickListener(this);
+		bt_about.setOnClickListener(this);
+		return view;
+	}
+
+	public void initFragment3() {
+		bt_changepwd = (Button) view.findViewById(R.id.bt_changepwd);
+		bt_information = (Button) view.findViewById(R.id.bt_information);
+		bt_changeInfo = (Button) view.findViewById(R.id.bt_changeInfo);
+		bt_mycontactor = (Button) view.findViewById(R.id.bt_mycontactor);
+		bt_logout = (Button) view.findViewById(R.id.bt_logout);
+		bt_about = (Button) view.findViewById(R.id.bt_about);
+		MainActivity.lo_logout = (LinearLayout) view
+				.findViewById(R.id.layout_logout);
+		if (!MainActivity.islogin) {
+			MainActivity.lo_logout.setVisibility(View.INVISIBLE);
+		} else {
+			MainActivity.lo_logout.setVisibility(View.VISIBLE);
+		}
+	}
+
+	@Override
+	public void onClick(View v) {
+		switch (v.getId()) {
+		case R.id.bt_changepwd:
+			changePassword();
+			break;
+
+		case R.id.bt_information:
+			// Log.i("tag", "1111111");
+			myInformation();
+			// Log.i("tag", "2222222");
+			break;
+		case R.id.bt_changeInfo:
+			changeInfo();
+			break;
+		case R.id.bt_about:
+			Intent intent = new Intent(getActivity(), AboutActivity.class);
+			startActivity(intent);
+			break;
+		case R.id.bt_logout:
+			MainActivity.lo_logout.setVisibility(View.INVISIBLE);
+			logout();
+			movetopage2();
+			break;
+		
+		default:
+
+			break;
+
+		}
+	}
+
+	private void changeInfo() {
+		if (!MainActivity.islogin) {
+			movetopage2();
+		}
+
+		else {
+			Intent intent = new Intent(getActivity(),
+					ChangeInformationActivity.class);
+			startActivity(intent);
+		}
+
+	}
+
+	public void myInformation() {
+		if (!MainActivity.islogin) {
+			movetopage2();
+		}
+
+		else {
+			Intent intent = new Intent(getActivity(),
+					MyInformationActivity.class);
+			startActivity(intent);
+		}
+
+	}
+
+	public void changePassword() {
+		if (!MainActivity.islogin) {
+			movetopage2();
+		} else {
+			SharedPreferences sp = getActivity().getSharedPreferences("user",
+					MainActivity.MODE_PRIVATE);
+			Intent intent = new Intent(getActivity(), ChangePwdActivity.class);
+			Bundle bundle = new Bundle();
+			bundle.putString("username", sp.getString("username", ""));
+			bundle.putString("password", sp.getString("password", ""));
+			intent.putExtras(bundle);
+			startActivity(intent);
+		}
+	}
+
+	public void movetopage2() {
+		MoveToPage2 mtp2 = (MoveToPage2) getActivity();
+		mtp2.movetopage2();
+	}
+
+	public void logout() {
+		LogOut lgo = (LogOut) getActivity();
+		lgo.logout();
+	}
+
+	public interface LogOut {
+		public void logout();
+	}
+
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+	<TextView android:id="@+id/tv_username"
+	    android:text="的订单"
+	    android:gravity="center_horizontal|center_vertical"
+	    android:layout_width="match_parent"
+	    android:drawableLeft="@drawable/img_admin"
+	    android:layout_height="40dp"
+	    android:textSize="20sp"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginRight="5dp"/>
+    <ListView
+        android:id="@+id/lv_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+</LinearLayout>
+

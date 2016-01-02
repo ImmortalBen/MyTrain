@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="90dp"
+    android:orientation="horizontal" >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical" 
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/tv_originStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="始发站"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/tv_startDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="出发日期" />
+
+            <TextView
+                android:id="@+id/tv_startTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="出发时间" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical" 
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_trainType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="车次" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/icon_arrow3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical" 
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/tv_terminalStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="到达站"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/tv_reachDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到达日期" />
+
+            <TextView
+                android:id="@+id/tv_reachTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到达时间" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+         android:layout_weight="4" >
+ 		<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="剩余座位:" 
+            android:layout_weight="1"/>
+ 		
+        <TextView
+            android:id="@+id/tv_remainSeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="剩余座位" 
+            android:layout_weight="1"/>
+        
+        <TextView
+            android:id="@+id/tv_ticketprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="票价" 
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

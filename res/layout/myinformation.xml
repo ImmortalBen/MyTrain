@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/top_layout"/>
+   <TextView 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/tv_username"
+        android:drawableLeft="@drawable/img_admin"/>
+      <TextView 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/tv_money"
+        android:drawableLeft="@drawable/img_money"/>
+   <TextView 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:id="@+id/tv_email"
+       android:gravity="center"
+        android:drawableLeft="@drawable/signup_email"/>
+
+   <TextView
+       android:id="@+id/tv_cardId"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="5dp"
+       android:layout_marginTop="10dp"
+       android:drawableLeft="@drawable/signup_cardid"
+       android:gravity="center"
+       android:textSize="20sp" />
+   
+         <TextView 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/tv_phone"
+        android:drawableLeft="@drawable/signup_phone"/>
+
+</LinearLayout>

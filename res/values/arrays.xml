@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="stations">
+        <item>广州南</item>
+        <item>深圳北</item>
+        <item>珠海</item>
+        <item>北京南</item>
+        <item>上海</item>
+        <item>顺德</item>
+        <item>潮汕</item>
+        <item>韶关</item>
+        <item>长沙南</item>
+    </string-array>
+</resources>

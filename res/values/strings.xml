@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="app_name">MyTrain</string>
+    <string name="myconnect">我的联系人</string>
+    <string name="R_W">读写文件测试！</string>
+    <string name="firstpage">首页</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_book_ticket">车票预订</string>
+    <string name="action_my12306">我的12306</string>
+    <string name="action_search">车次查询</string>
+    <string name="sign_up">注册</string>
+    <string name="login">登录</string>
+    <string name="back">返回</string>
+    <string name="aboutus">关于我们</string>
+    <string name="copyright">Copyright @ 2015~2016 MyTrain.</string>
+    <string name="update">检查新版本</string>
+    <string name="copyright2">All Rights Reserved.</string>
+
+    <drawable name="gainsboro_btn_normal">@color/gainsboro</drawable>
+    <drawable name="gainsboro_btn_pressed">@color/darkgray</drawable>
+    <drawable name="indianred_btn_normal">@color/indianred</drawable>
+    <drawable name="indianred_btn_pressed">@color/tomato</drawable>
+    <drawable name="white_btn_normal">@color/white</drawable>
+    <drawable name="white_btn_pressed">@color/darkgray</drawable>
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/gainsboro"
+    android:orientation="horizontal"
+    android:layout_height="55dp" >
+
+    <ImageButton
+        android:id="@+id/tab01"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/orange"
+        android:src="@drawable/icon_train" />
+
+    <FrameLayout
+        android:id="@+id/layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/gainsboro" >
+
+        <ImageButton
+            android:id="@+id/tab02"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:background="@drawable/icon_ticket" />
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/tab03"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/gainsboro"
+        android:src="@drawable/icon_profile" />
+
+</LinearLayout>

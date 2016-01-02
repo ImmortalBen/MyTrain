@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:orientation="vertical" >
+   <TextView 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="left|center_vertical"
+        android:textSize="20sp"
+        android:id="@+id/tv_name"
+        android:drawableLeft="@drawable/img_myconnect"/>
+      <TextView 
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="left|center_vertical"
+        android:textSize="20sp"
+        android:id="@+id/tv_cardId"
+        android:drawableLeft="@drawable/signup_cardid"/>
+</LinearLayout>

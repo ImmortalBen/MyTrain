@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" 
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+         <TextView
+            android:id="@+id/tv_originStation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="始发站"
+            android:textSize="20sp" 
+           
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:background="@drawable/icon_arrow3" />
+
+        <TextView
+            android:id="@+id/tv_terminalStation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="到达站"
+            android:textSize="20sp" />
+    </LinearLayout>
+       
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/top_layout"/>
+   <TextView 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical|left"
+        android:textSize="20sp"
+        android:id="@+id/tv_username"
+        android:drawableLeft="@drawable/img_admin"/>
+    <EditText 
+        android:id="@+id/edt_email"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical|left"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/signup_email"/>
+    
+    <EditText 
+        android:id="@+id/edt_phone"
+          android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical|left"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/signup_phone"/>
+    
+    
+   	<EditText 
+        android:id="@+id/edt_cardId"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical|left"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/signup_cardid"/>
+   	
+   	<Button
+   	    android:id="@+id/change"
+   	    android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="提交" 
+        android:background="@drawable/gainsboro_button_seletor"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    
+
+</LinearLayout>
